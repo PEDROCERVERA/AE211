@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="background-color: #007bff; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo" style="font-size: 20px; font-weight: bold;">Pedro Cervera</div>
+    <nav style="display: flex; align-items: center;">
+      <a href="../index.html" style="color: white; text-decoration: none; margin-left: 20px;">Inicio</a>
+      <a href="../VIDEO1/index.html" style="color: white; text-decoration: none; margin-left: 20px;">Video 1</a>
+      <a href="../VIDEO2/index.html" style="color: white; text-decoration: none; margin-left: 20px;">Video 2</a>
+      <a href="../VIDEO3/index.html" style="color: white; text-decoration: none; margin-left: 20px;">Video 3</a>
+      <a href="../VIDEO4/index.html" style="color: white; text-decoration: none; margin-left: 20px;">Video 4</a>
+      <a href="../CRUD/index.html" style="color: white; text-decoration: none; margin-left: 20px;">LocalStorage</a>
+    </nav>
+  </header>
+    <main class="container">
+    <section class="crud">
+        <h1 class="crud__title">CRUD DE USUARIOS</h1>
+        <form id="formRegister" class="crud__form">
+            <input type="text" placeholder="Name" id="nameInput" class="form__input" />
+            <input type="text" placeholder="Email" id="emailInput" class="form__input" />
+            <button type="submit" id="submitButton" class="button button--primary">Add</button>
+        </form>
+        <table class="crud__table">
+            <thead>
+                <tr>
+                  <th class="table__header">Name</th>
+                  <th class="table__header">Email</th>
+                  <th class="table__header">Action<th>
+                 </tr>
+            </thead>
+            <tbody id="tableBody" class="table__body">
+                
+            </tbody>
+        </table>
+    </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
