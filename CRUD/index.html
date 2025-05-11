@@ -23,6 +23,8 @@
         <h1 class="crud__title">CRUD DE USUARIOS</h1>
         <form id="formRegister" class="crud__form">
             <input type="text" placeholder="Name" id="nameInput" class="form__input" />
+            <input type="text" placeholder="city" id="cityInput" class="form__input" />
+            <input type="text" placeholder="cologne" id="cologneInput" class="form__input" />
             <input type="text" placeholder="Email" id="emailInput" class="form__input" />
             <button type="submit" id="submitButton" class="button button--primary">Add</button>
         </form>
@@ -30,12 +32,13 @@
             <thead>
                 <tr>
                   <th class="table__header">Name</th>
+                  <th class="table__header">City</th>
+                  <th class="table__header">Cologne</th>
                   <th class="table__header">Email</th>
                   <th class="table__header">Action<th>
                  </tr>
             </thead>
             <tbody id="tableBody" class="table__body">
-                
             </tbody>
         </table>
     </section>
